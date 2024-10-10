@@ -44,47 +44,48 @@ const Navbar = () => {
       variants={navbarAnimate}
       initial="initial"
       animate="animate"
-      className="sticky top-0 z-50 flex items-center justify-around w-full h-16 shadow-md shadow-ring/10 backdrop-blur-md "
+      className="sticky top-0 z-50 w-full h-16 shadow-md shadow-ring/10 backdrop-blur-md "
     >
-      <Link href="/" scroll={false} onClick={() => handleClick("home")}>
-        <div className="flex text-base uppercase xs:text-2xl lg:text-3xl font-playfair">
-          {letters.map((letter, index) => (
-            <div
-              key={index}
-              className="animate-glow"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              {letter === " " ? <>&nbsp;</> : letter}
-            </div>
-          ))}
+      <div className="flex items-center justify-between max-w-7xl mx-auto px-5 md:px-7">
+        <Link href="/" scroll={false} onClick={() => handleClick("home")}>
+          <div className="flex text-base uppercase xs:text-2xl lg:text-3xl font-playfair">
+            {letters.map((letter, index) => (
+              <div
+                key={index}
+                className="animate-glow"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                {letter === " " ? <>&nbsp;</> : letter}
+              </div>
+            ))}
+          </div>
+        </Link>
+        <div className="absolute top-[70px] flex justify-center w-full md:w-fit md:block md:static left-0 ">
+          <NavbarItem />
         </div>
-      </Link>
-      <div className="absolute top-[70px] flex justify-center w-full md:w-fit md:block md:static left-0 ">
-        <NavbarItem />
-      </div>
-      <div className="flex items-center justify-center gap-1 md:gap-3">
-        <Button asChild variant="ghost" size="icon">
-          <Link
-            href="https://github.com/abduvalidev"
-            aria-label="Contact with me via mail"
-          >
-            <BiLogoGmail className="w-6 h-6" />
-          </Link>
-        </Button>
-        <Button asChild variant="ghost" size="icon">
-          <Link
-            href="https://t.me/Kozimov_Abduvali"
-            aria-label="Contact with me via Telegram"
-          >
-            <BiLogoTelegram className="w-6 h-6" />
-          </Link>
-        </Button>
-        <Button variant="ghost" size="icon" onClick={toggleTheme}>
-          <SunIcon className="block w-6 h-6 transition-all duration-1000 scale-100 rotate-0 dark:hidden dark:-rotate-90 dark:scale-0" />
-          <MoonIcon className="hidden w-6 h-6 transition-all duration-1000 scale-0 rotate-90 dark:block dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-
+        <div className="flex items-center justify-center gap-1 md:gap-3">
+          <Button asChild variant="ghost" size="icon">
+            <Link
+              href="https://github.com/abduvalidev"
+              aria-label="Contact with me via mail"
+            >
+              <BiLogoGmail className="w-6 h-6" />
+            </Link>
+          </Button>
+          <Button asChild variant="ghost" size="icon">
+            <Link
+              href="https://t.me/Kozimov_Abduvali"
+              aria-label="Contact with me via Telegram"
+            >
+              <BiLogoTelegram className="w-6 h-6" />
+            </Link>
+          </Button>
+          <Button variant="ghost" size="icon" onClick={toggleTheme}>
+            <SunIcon className="block w-6 h-6 transition-all duration-1000 scale-100 rotate-0 dark:hidden dark:-rotate-90 dark:scale-0" />
+            <MoonIcon className="hidden w-6 h-6 transition-all duration-1000 scale-0 rotate-90 dark:block dark:rotate-0 dark:scale-100" />
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+        </div>
       </div>
     </motion.header>
   );
