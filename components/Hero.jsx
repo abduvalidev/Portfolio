@@ -105,7 +105,7 @@ const Hero = () => {
         >
           <motion.h1
             variants={uptoDownItem}
-            className="text-4xl font-extrabold tracking-tight text-left text-transparent capitalize xs:text-5xl md:h-20 md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text w-fit scroll-m-20"
+            className="text-4xl font-extrabold tracking-tight text-left text-transparent capitalize xs:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text w-fit scroll-m-20"
           >
             Abduvali Kozimov
           </motion.h1>
@@ -152,7 +152,7 @@ const Hero = () => {
             </Button>
           </motion.div>
         </motion.div>
-        <div className="w-full p-8 md:w-5/12 lg:w-1/3">
+        <div className="sm:max-w-96 w-full p-8 md:w-5/12 lg:w-1/3">
           <div
             className="relative z-20 grid p-8 border-2 border-gray-800 rounded-full dark:border-border place-items-center"
             ref={containerRef}
@@ -178,12 +178,12 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
-                className="absolute z-10 grid w-12 h-12 transition-transform duration-1000 rounded-full bg-border dark:bg-border ease-primary place-items-center group"
+                className="absolute z-10 grid size-12 transition-transform duration-1000 rounded-full bg-border dark:bg-border ease-primary place-items-center group"
                 ref={(el) => (circlesRefs.current[index] = el)}
                 aria-label={item.label}
               >
                 <div className="z-10 grid w-full h-full bg-gray-800 rounded-full place-items-center">
-                  <item.Icon className="w-6 h-6 transition-all duration-300 ease-in-out group-hover:rotate-[360deg] text-[#F8FAFC]" />
+                  <item.Icon className="size-6 transition-all duration-300 ease-in-out group-hover:rotate-[360deg] text-[#F8FAFC]" />
                 </div>
               </Link>
             ))}
