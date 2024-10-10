@@ -8,6 +8,7 @@ import Link from "next/link";
 import { BiLogoGmail, BiLogoTelegram } from "react-icons/bi";
 import letters from "../public/data/name.json";
 import NavbarItem from "./NavbarItem";
+import { FaGithub } from "react-icons/fa";
 
 const navbarAnimate = {
   initial: {
@@ -69,7 +70,7 @@ const Navbar = () => {
               href="https://github.com/abduvalidev"
               aria-label="Contact with me via mail"
             >
-              <BiLogoGmail className="w-6 h-6" />
+              <FaGithub className="w-6 h-6" />
             </Link>
           </Button>
           <Button asChild variant="ghost" size="icon">
