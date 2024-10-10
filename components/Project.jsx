@@ -53,11 +53,8 @@ const Project = () => {
         whileInView="visible"
       >
         <h1 className="text-4xl font-extrabold tracking-tight scroll-m-20 lg:text-5xl">
-          Projects
+          My Projects
         </h1>
-        <h2 className="pb-2 mt-5 text-3xl font-semibold tracking-tight transition-colors border-b md:mt-10 scroll-m-20 first:mt-0">
-          Crafting the Web: A Showcase of My Web Development Projects
-        </h2>
       </motion.div>
       <motion.div
         variants={projectItem}
@@ -76,7 +73,7 @@ const Project = () => {
               .slice()
               .reverse()
               .map((item, index) => (
-                <CarouselItem key={index} className=" md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                   <Card className="h-full dark:bg-cardBg transition-colors duration-1000 ease-primary hover:shadow-lg dark:hover:border-violet-500 hover:border-gray-300 group">
                     <div className="flex justify-center -translate-y-[1px]">
                       <div className="w-3/4">

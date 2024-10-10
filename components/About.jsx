@@ -114,7 +114,7 @@ const About = () => {
           whileInView="animate"
           className="pb-2 mt-8 text-3xl font-semibold tracking-tight transition-colors border-b md:mt-10 scroll-m-20 first:mt-0"
         >
-          Hello, I&apos;m Emon Singha
+          Hello, I&apos;m Abduvali Kozimov
         </motion.h2>
         <motion.p
           variants={leftToRight}
@@ -122,10 +122,7 @@ const About = () => {
           whileInView="animate"
           className="leading-7 [&:not(:first-child)]:mt-6"
         >
-          I&apos;m a passionate Frontend Developer dedicated to creating
-          immersive UI experiences that resonate with users. With a keen eye for
-          detail and a love for clean code, I bring ideas to life through
-          elegant and functional interfaces.
+         I am a Front-End Developer with 1+ experience in developing responsive and visually appealing websites using modern technologies like Tailwind CSS, JavaScript and React JS. I've worked on several real-world projects where I've been instrumental in creating and designing user interfaces from scratch. My skills include HTML, CSS, Tailwind CSS, SCSS, JavaScript, React JS and Git. I have successfully delivered projects for clients in a variety of industries, providing high-quality, efficient, and scalable code.
         </motion.p>
         <motion.h2
           variants={leftToRight}
@@ -200,7 +197,7 @@ const About = () => {
                 </div>
               </div>
             </motion.div> */}
-           
+
             <Marquee pauseOnHover>
               <ul className="flex gap-5 pr-5 text-5xl flex-nowrap cursor-grabbing">
                 {icons.map((IconSlider, iconIndex) => (
@@ -218,34 +215,37 @@ const About = () => {
               <TabsContent value="experience">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Experience</CardTitle>
+                    <CardTitle>Web Development</CardTitle>
                     <CardDescription>
-                      Gained valuable industry insights.
+                      I have gained extensive experience in front-end
+                      development through various successful projects.
+                      Proficient in HTML, CSS, and JavaScript, I specialize in
+                      creating interactive and responsive web applications using
+                      React JS.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <div className="grid grid-cols-1 xl:grid-cols-2 gap-3">
                       <Link
-                        href="https://aamrainfotainment.com/"
+                        href="#"
                         className="space-y-2 group relative "
-                        target="_blank"
                         rel="noopener noreferrer"
                         aria-label="AIL"
                       >
                         <p className="flex items-center gap-1 text-sm">
-                          <MdDateRange />3 Sept 2023 - 31 Dec 2023
+                          <MdDateRange />3 Sept 2023 - 15 Avg 2024
                         </p>
                         <h3 className="font-semibold leading-none tracking-wide ">
-                          Web Developer - Intern
+                          Intern Front-End Developer
                         </h3>
-                        <p>Aamra Infotainment Ltd.</p>
+                        <p className="line-clamp-3">Developed and deployed multiple web applications using HTML, CSS, JavaScript, and React JS.
+                        </p>
                         <div className="absolute w-0 transition-all duration-500 ease-primary group-hover:w-full h-0.5 bg-violet-500 rounded-md -bottom-2"></div>
                       </Link>
                       <Link
-                        href="https://sjinnovation.com/"
+                        href="#"
                         className="space-y-2 group relative"
-                        target="_blank"
-                        rel="noopener noreferrer"
+s                        rel="noopener noreferrer"
                         aria-label="SJI"
                       >
                         <p className="flex items-center gap-1 text-sm">
@@ -254,7 +254,8 @@ const About = () => {
                         <h3 className="font-semibold leading-none tracking-wide ">
                           Intern Frontend Developer
                         </h3>
-                        <p>SJ Innovation LLC</p>
+                        <p className="line-clamp-3">Integrated real-time analytics and APIs, ensuring smooth communication between front-end components and back-end systems.
+                        </p>
                         <div className="absolute w-0 transition-all duration-500 ease-primary group-hover:w-full h-0.5 bg-violet-500 rounded-md -bottom-2"></div>
                       </Link>
                     </div>
@@ -264,14 +265,12 @@ const About = () => {
               <TabsContent value="education">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Education</CardTitle>
-                    <CardDescription>
-                      Academic Background and Qualifications.
-                    </CardDescription>
+                    <CardTitle>Wester IT Academy</CardTitle>
+                    <CardDescription>I gained deep knowledge of React JS and learned how to use it effectively.</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <Link
-                      href="https://www.aiub.edu/"
+                      href="https://westeracademy.uz/"
                       className="space-y-2 group relative"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -279,12 +278,16 @@ const About = () => {
                     >
                       <p className="flex items-center gap-1 text-sm">
                         <MdDateRange />
-                        2020 - 2023
+                        2023 - 2024
                       </p>
                       <h3 className="font-semibold leading-none tracking-wide">
-                        Bachelor of Science in Computer Science & Engineering
+                        Wester IT Academy is an educational institution on
+                        modern IT technologies
                       </h3>
-                      <p>American International University-Bangladesh (AIUB)</p>
+                      <p>
+                        At the academy, students learn core such as IT &
+                        English.
+                      </p>
                       <div className="absolute w-0 transition-all duration-500 ease-primary group-hover:w-full h-0.5 bg-violet-500 rounded-md -bottom-2"></div>
                     </Link>
                   </CardContent>

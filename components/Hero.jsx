@@ -5,10 +5,9 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { MdConnectWithoutContact } from "react-icons/md";
-import { TbFileCv } from "react-icons/tb";
 import socialIcons from "./icon/Social";
 import Typewriter from "./ui/Typewriter";
-import emon from "/public/img/emon.webp";
+import emon from "/public/img/profile.jpg";
 
 import useScrollSpy from "@/hook/useScrollSpy";
 import { useInView } from "framer-motion";
@@ -108,7 +107,7 @@ const Hero = () => {
             variants={uptoDownItem}
             className="h-16 text-4xl font-extrabold tracking-tight text-left text-transparent capitalize xs:text-5xl md:h-20 md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text w-fit scroll-m-20"
           >
-            Emon Singha
+            Abduvali Kozimov
           </motion.h1>
           <motion.h2
             variants={uptoDownItem}
@@ -135,11 +134,11 @@ const Hero = () => {
           </motion.p>
           <motion.div
             variants={uptoDownItem}
-            className="flex flex-col justify-center gap-3 mt-3 xs:flex-row md:justify-start md:gap-5 "
+            className="flex justify-center gap-3 mt-3 xs:flex-row md:justify-start md:gap-5 "
           >
             <Button asChild size="hero">
               <Link
-                href="/"
+                href="https://t.me/Kozimov_Abduvali"
                 scroll={false}
                 onClick={() => handleClick("contact")}
                 className="relative dark:bg-cardBg overflow-hidden transition-all bg-transparent border-2 border-accent-foreground hover:bg-transparent group"
@@ -149,24 +148,6 @@ const Hero = () => {
                   Contact Me
                   <MdConnectWithoutContact className="w-6 h-6" />
                 </span>
-              </Link>
-            </Button>
-            <Button asChild size="hero" className="bg-card">
-              <Link
-                href="/resume"
-                className="relative dark:bg-cardBg overflow-hidden transition-all border-2 border-accent-foreground group"
-                aria-label="Read more about me in Resume"
-              >
-                <span className="absolute z-10 w-full h-full transition-all duration-300 ease-in-out -translate-x-full group-hover:translate-x-0 bg-accent-foreground"></span>
-                <div className="z-20 flex items-center justify-center gap-1 text-base font-bold tracking-widest uppercase md:gap-3 md:text-xl text-primary group-hover:text-muted font-oswald">
-                  Get Resume
-                  <div className="relative w-6 h-6 ">
-                    <span className="absolute w-12 h-12 -top-1/2 -left-1/2 border rounded-full opacity-0 pointer-events-none border-primary group-hover:border-muted animate-ringOne -z-10"></span>
-                    <span className="absolute w-12 h-12 -top-1/2 -left-1/2 border rounded-full opacity-0 pointer-events-none border-primary group-hover:border-muted animate-ringTwo -z-10"></span>
-                    <span className="absolute w-12 h-12 -top-1/2 -left-1/2 border rounded-full opacity-0 pointer-events-none border-primary group-hover:border-muted animate-ringThree -z-10"></span>
-                    <TbFileCv className="w-6 h-6 bg-card rounded-full z-40 group-hover:bg-accent-foreground" />
-                  </div>
-                </div>
               </Link>
             </Button>
           </motion.div>

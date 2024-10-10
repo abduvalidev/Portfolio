@@ -5,8 +5,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { BiLogoGmail } from "react-icons/bi";
-import { TbFileCv } from "react-icons/tb";
+import { BiLogoGmail, BiLogoTelegram } from "react-icons/bi";
 import letters from "../public/data/name.json";
 import NavbarItem from "./NavbarItem";
 
@@ -65,16 +64,19 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center gap-1 md:gap-3">
         <Button asChild variant="ghost" size="icon">
-          <Link href="/resume" aria-label="Read more about me in Resume">
-            <TbFileCv className="w-6 h-6" />
+          <Link
+            href="https://github.com/abduvalidev"
+            aria-label="Contact with me via mail"
+          >
+            <BiLogoGmail className="w-6 h-6" />
           </Link>
         </Button>
         <Button asChild variant="ghost" size="icon">
           <Link
-            href="mailto:emonsingha209@gmail.com"
-            aria-label="Contact with me via mail"
+            href="https://t.me/Kozimov_Abduvali"
+            aria-label="Contact with me via Telegram"
           >
-            <BiLogoGmail className="w-6 h-6" />
+            <BiLogoTelegram className="w-6 h-6" />
           </Link>
         </Button>
         <Button variant="ghost" size="icon" onClick={toggleTheme}>

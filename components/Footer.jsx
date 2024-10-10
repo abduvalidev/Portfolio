@@ -16,19 +16,18 @@ const Footer = () => {
           <FaRegCopyright className="w-4 h-4" /> 2024{" "}
           <span>
             <Link
-              href="https://www.linkedin.com/in/emon-singha209/"
+              href="https://www.linkedin.com/in/abduvali-dev"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Linkedin Via Credit"
             >
-              Emon Singha.
+              Abduvali Kozimov
             </Link>
-          </span>{" "}
-          All rights reserved.
+          </span>
         </div>
         <div className="flex gap-3 flex-nowrap">
           <Link
-            href="https://github.com/emonsingha209/NextJs-Tailwind-Portfolio"
+            href="https://github.com/abduvalidev"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Star"
@@ -36,16 +35,6 @@ const Footer = () => {
           >
             <FaStar className="w-4 h-4" />
             Star
-          </Link>
-          <Link
-            href="https://github.com/emonsingha209/NextJs-Tailwind-Portfolio/fork"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Fork"
-            className="flex items-center gap-1 flex-nowrap "
-          >
-            <GoRepoForked className="w-4 h-4" />
-            Fork
           </Link>
         </div>
         <div>

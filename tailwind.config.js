@@ -13,14 +13,16 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        xs: "360px",
+        xns: "480px",
+        sm: "670px",
+        md: "768px",  
+        lg: "1024px",
+        xl: "1280px",
         "2xl": "1400px",
       },
     },
     extend: {
-      screens: {
-        xs: "360px",
-        xns: "480px",
-      },
       backgroundImage: {
         "cardBg":
           "radial-gradient(150% 150% at 0% 100%, #261c45 0%, rgba(35, 25, 74, 0) 100%)",
