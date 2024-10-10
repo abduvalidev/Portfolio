@@ -46,7 +46,7 @@ const projectItem = {
 };
 const Project = () => {
   return (
-    <section id="projects" className="py-5 md:mt-5 space-y-8 max-w-7xl">
+    <section id="projects" className="py-5 md:mt-5 space-y-8 max-w-7xl mx-auto px-5 md:px-7">
       <motion.div
         variants={containerTitle}
         initial="hidden"
