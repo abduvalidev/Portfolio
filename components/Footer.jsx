@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
       </div>
-      <footer className="container flex flex-col-reverse md:flex-row items-center justify-center gap-3 py-3 text-sm border-t md:justify-between border-t-border">
+      <footer className="max-w-7xl flex flex-col-reverse md:flex-row items-center justify-center gap-3 py-3 text-sm border-t md:justify-between border-t-border">
         <div className="flex items-center gap-1 flex-nowrap ">
           <FaRegCopyright className="w-4 h-4" /> 2024{" "}
           <span>

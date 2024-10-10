@@ -98,7 +98,7 @@ const About = () => {
   }, [divRef, screenHeight]);
 
   return (
-    <section className="flex flex-wrap py-5 container" id="about">
+    <section className="max-w-7xl flex flex-wrap py-5" id="about">
       <div className="w-full md:w-1/2">
         <motion.h1
           variants={leftToRight}
