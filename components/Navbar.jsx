@@ -44,9 +44,9 @@ const Navbar = () => {
       variants={navbarAnimate}
       initial="initial"
       animate="animate"
-      className="sticky top-0 z-50 w-full h-16 shadow-md shadow-ring/10 backdrop-blur-md "
+      className="sticky top-0 z-50 w-full shadow-md shadow-ring/10 backdrop-blur-md py-3"
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto px-5 md:px-7">
+      <div className="flex items-center justify-between w-full max-w-7xl mx-auto px-5 md:px-7">
         <Link href="/" scroll={false} onClick={() => handleClick("home")}>
           <div className="flex text-base uppercase xs:text-2xl lg:text-3xl font-playfair">
             {letters.map((letter, index) => (
