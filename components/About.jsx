@@ -122,7 +122,7 @@ const About = () => {
           whileInView="animate"
           className="leading-7 [&:not(:first-child)]:mt-6"
         >
-         I am a Front-End Developer with 1+ experience in developing responsive and visually appealing websites using modern technologies like Tailwind CSS, JavaScript and React JS. I've worked on several real-world projects where I've been instrumental in creating and designing user interfaces from scratch. My skills include HTML, CSS, Tailwind CSS, SCSS, JavaScript, React JS and Git. I have successfully delivered projects for clients in a variety of industries, providing high-quality, efficient, and scalable code.
+         I am a Front-End Developer with 1+ experience in developing responsive and visually appealing websites using modern technologies like Tailwind CSS, JavaScript and React JS. I have worked on several real-world projects where I have been instrumental in creating and designing user interfaces from scratch. My skills include HTML, CSS, Tailwind CSS, SCSS, JavaScript, React JS and Git. I have successfully delivered projects for clients in a variety of industries, providing high-quality, efficient, and scalable code.
         </motion.p>
         <motion.h2
           variants={leftToRight}

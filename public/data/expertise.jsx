@@ -1,6 +1,3 @@
-import { BiLogoPostgresql } from "react-icons/bi";
-import { CgPerformance } from "react-icons/cg";
-import { DiDotnet } from "react-icons/di";
 import {
   FaBootstrap,
   FaCss3,
@@ -8,19 +5,9 @@ import {
   FaPhp,
   FaReact,
 } from "react-icons/fa";
-import { FaGit } from "react-icons/fa6";
-import { GrGraphQl } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiLighthouse,
-  SiMicrosoftsqlserver,
-  SiMysql,
-  SiNestjs,
-  SiPagespeedinsights,
-  SiPostman,
   SiTailwindcss,
-  SiTypescript,
-  SiVercel,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 
