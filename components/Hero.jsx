@@ -168,7 +168,7 @@ const Hero = () => {
                 width={600}
                 height={600}
                 priority
-                alt="Emon Singha"
+                alt="Abduvali Kozimov"
               />
             </motion.div>
 

@@ -1,8 +1,8 @@
 import ResumeViewer from "@/components/ResumeViewer";
 export const metadata = {
-  title: "Resume | Emon Singha",
+  title: "Resume | Abduvali Kozimov",
   description:
-    "Explore the professional resume of Emon Singha, a passionate Frontend Developer with expertise in React and Next.js.",
+    "Explore the professional resume of Abduvali Kozimov, a passionate Frontend Developer with expertise in React and Next.js.",
   robots: "index, follow",
   canonical: "https://emonsingha.vercel.app/resume",
   openGraph: {
@@ -12,10 +12,10 @@ export const metadata = {
     url: "https://emonsingha.vercel.app/resume",
     image: {
       url: "https://emonsingha.vercel.app/img/ogImage.webp",
-      alt: "Emon Singha's Resume",
+      alt: "Abduvali Kozimov's Resume",
     },
     description:
-      "Explore the professional resume of Emon Singha, a passionate Frontend Developer with expertise in React and Next.js.",
+      "Explore the professional resume of Abduvali Kozimov, a passionate Frontend Developer with expertise in React and Next.js.",
   },
 };
 export default function Resume() {
