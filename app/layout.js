@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Lato, Oswald, Playfair_Display } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
-import { openGraphImage } from "./shared-metadata";
 
 const oswald = Oswald({
   weight: "400",
@@ -39,31 +39,17 @@ export const metadata = {
     "Abduvali Kozimov is a passionate Frontend Developer dedicated to crafting immersive UI experiences with React and Next.js. Known for clean code and elegant interfaces.",
   keywords:
     "Abduvali Kozimov, Frontend Developer, React Developer, Next.js Developer, Web Developer, UI Developer, Web Development, JavaScript, HTML, CSS",
-  author: "Abduvali Kozimov",
-  robots: "index, follow",
-  canonical: "https://emonsingha.vercel.app",
-  openGraph: {
-    ...openGraphImage,
-    title: "Abduvali Kozimov | Frontend Developer",
-    type: "website",
-    url: "https://emonsingha.vercel.app/",
-    description:
-      "Abduvali Kozimov is a passionate Frontend Developer who excels in creating engaging UI experiences with a focus on React and Next.js. Explore his portfolio to see his work.",
-    site_name: "Abduvali Kozimov Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@EmonSingha209",
-    title: "Abduvali Kozimov | Frontend Developer",
-    description:
-      "Discover the work of Abduvali Kozimov, a dedicated Frontend Developer specializing in React and Next.js, known for clean code and beautiful UI designs.",
-    image: "https://emonsingha.vercel.app/img/ogImage.webp",
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true} className="!scroll-smooth">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+      </Head>
       <body
         className={cn(
           "bg-background font-lato antialiased ",

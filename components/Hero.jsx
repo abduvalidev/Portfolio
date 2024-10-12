@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
 import socialIcons from "./icon/Social";
 import Typewriter from "./ui/Typewriter";
-import emon from "/public/img/profile.jpg";
+import emon from "/public/img/p.jpg";
 
 import useScrollSpy from "@/hook/useScrollSpy";
 import { useInView } from "framer-motion";
@@ -134,7 +134,7 @@ const Hero = () => {
           </motion.p>
           <motion.div
             variants={uptoDownItem}
-            className="flex justify-center gap-3 mt-3 xs:flex-row md:justify-start md:gap-5 "
+            className="flex justify-center gap-3 mt-3 xs:flex-row md:justify-start md:gap-5"
           >
             <Button asChild size="hero">
               <Link
