@@ -137,6 +137,7 @@ const Hero = () => {
             className="flex justify-center gap-3 mt-3 xs:flex-row md:justify-start md:gap-5"
           >
             <Button asChild size="hero">
+              
               <Link
                 href="https://t.me/Kozimov_Abduvali"
                 scroll={false}
